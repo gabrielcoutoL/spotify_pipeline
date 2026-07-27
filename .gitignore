@@ -1,0 +1,63 @@
+# ===== Python =====
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Segredos e ambiente =====
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+credentials.json
+
+# ===== Terraform =====
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+# NÃO ignorar: .terraform.lock.hcl (versionar de propósito)
+
+# ===== dbt =====
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# ===== Airflow =====
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# ===== Dados (não versionar datasets) =====
+data/
+*.parquet
+*.csv
+*.log
+
+# ===== Empacotamento de Lambda =====
+*.zip
+.build/
+
+# ===== OS / editor =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
